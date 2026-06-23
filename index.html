@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Coherencia Institucional — Inicio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#EEF0EC;
+    --card:#F7F8F5;
+    --ink:#1A1D1B;
+    --ink-soft:#5B5F58;
+    --accent:#0F6E56;
+    --line:rgba(26,29,27,.16);
+    --pol:#2A4D6B; /* Política */
+    --cultura:#7A2A55; /* Cultura */
+    --eco:#6B5A1F; /* Economía */
+    --geo:#4A2A6B; /* Geopolítica */
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Source Serif 4', Georgia, serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:1080px;margin:0 auto;padding:0 28px 80px;}
+  .masthead{padding:28px 0 22px;text-align:center;border-bottom:2px solid var(--ink);}
+  .dateline{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.12em;color:var(--ink-soft);text-transform:uppercase;}
+  .wordmark{font-size:48px;font-weight:700;margin:10px 0 6px;letter-spacing:-0.01em;}
+  .tagline{font-style:italic;color:var(--ink-soft);font-size:15px;margin:0 0 18px;}
+  .nav{display:flex;justify-content:center;gap:28px;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.08em;text-transform:uppercase;}
+  .nav a{color:var(--ink);text-decoration:none;padding-bottom:4px;border-bottom:2px solid transparent;}
+  .nav a:hover{border-bottom-color:var(--accent);}
+
+  .hero{display:grid;grid-template-columns:1.3fr .9fr;gap:40px;padding:40px 0;border-bottom:1px solid var(--line);align-items:start;}
+  .hero .tag{display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#fff;background:var(--geo);padding:3px 9px;border-radius:2px;margin-bottom:14px;}
+  .hero h2{font-size:38px;line-height:1.12;margin:0 0 14px;font-weight:700;}
+  .hero .dek{font-size:17px;color:var(--ink-soft);line-height:1.55;margin:0 0 18px;}
+  .byline{font-family:'IBM Plex Mono',monospace;font-size:11.5px;color:var(--ink-soft);display:flex;flex-wrap:wrap;gap:6px;align-items:center;}
+
+  .stamp{justify-self:end;border:2px solid var(--accent);color:var(--accent);font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:.14em;text-transform:uppercase;padding:14px 18px;transform:rotate(-7deg);text-align:center;line-height:1.5;}
+  .stamp span{display:block;font-size:9.5px;letter-spacing:.1em;color:var(--ink-soft);text-transform:none;margin-top:4px;}
+
+  .beat{padding:36px 0;border-bottom:1px solid var(--line);}
+  .beat:last-of-type{border-bottom:none;}
+  .beat-head{display:flex;align-items:center;gap:14px;margin-bottom:20px;}
+  .beat-head .tag{font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.1em;text-transform:uppercase;font-weight:500;}
+  .beat-head .rule{flex:1;height:1px;background:var(--line);}
+  .tag.politica{color:var(--pol);} .tag.cultura{color:var(--cultura);} .tag.economia{color:var(--eco);} .tag.geopolitica{color:var(--geo);}
+
+  .cards{display:grid;grid-template-columns:repeat(2,1fr);gap:26px;}
+  .card .thumb{height:120px;background:repeating-linear-gradient(45deg,var(--card),var(--card) 8px,#e4e6e0 8px,#e4e6e0 9px);border:1px solid var(--line);margin-bottom:12px;}
+  .card h3{font-size:19px;line-height:1.3;margin:0 0 8px;}
+  .card .dek{font-size:14px;color:var(--ink-soft);margin:0 0 10px;line-height:1.5;}
+  .card .meta{font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:var(--ink-soft);display:flex;gap:6px;align-items:center;letter-spacing:.02em;}
+  .card .meta .ok{color:var(--accent);}
+
+  footer{padding:40px 0 0;}
+  .foot-note{font-size:13px;color:var(--ink-soft);max-width:560px;line-height:1.6;margin:0 0 18px;}
+  .sub{display:flex;gap:0;max-width:380px;}
+  .sub input{flex:1;font-family:'IBM Plex Mono',monospace;font-size:12px;padding:10px 12px;border:1px solid var(--ink);border-right:none;background:var(--card);}
+  .sub button{font-family:'IBM Plex Mono',monospace;font-size:12px;text-transform:uppercase;letter-spacing:.06em;padding:10px 16px;background:var(--ink);color:var(--paper);border:1px solid var(--ink);cursor:pointer;}
+
+  @media (max-width:760px){
+    .wordmark{font-size:38px;}
+    .nav{gap:16px;flex-wrap:wrap;font-size:11px;}
+    .hero{grid-template-columns:1fr;}
+    .stamp{justify-self:start;}
+    .cards{grid-template-columns:1fr;}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="masthead">
+    <div class="dateline">Lunes 22 de junio de 2026 — Buenos Aires</div>
+    <h1 class="wordmark">Coherencia Institucional</h1>
+    <p class="tagline">Periodismo de datos. Procesado por IA, gatekeeping humano.</p>
+    <nav class="nav">
+      <a href="#">Política</a><a href="#">Cultura</a><a href="#">Economía</a><a href="#">Geopolítica</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div>
+      <span class="tag">Geopolítica</span>
+      <h2>El reacomodamiento de las cadenas de suministro redibuja alianzas comerciales</h2>
+      <p class="dek">Tres bloques regionales avanzan en acuerdos paralelos mientras crece la disputa por el acceso a minerales críticos.</p>
+      <div class="byline">
+        <span>Agente 1: Fuentes cruzadas</span><span>·</span>
+        <span>Agente 2: Redacción</span><span>·</span>
+        <span>Agente 3: Distribución</span>
+      </div>
+    </div>
+    <div class="stamp">Gatekeeper<span>Aprobado - Director Editorial</span></div>
+  </section>
+
+  <section class="beat">
+    <div class="beat-head"><span class="tag politica">Política</span><span class="rule"></span></div>
+    <div class="cards">
+      <article class="card">
+        <div class="thumb"></div>
+        <h3>Debate sobre regulaciones tecnológicas entra en fase resolutiva</h3>
+        <p class="dek">Comités evalúan límites a la recolección de datos biométricos en espacios públicos.</p>
+        <div class="meta"><span class="ok">✓ Verificado</span><span>·</span><span>Agente 3</span><span>·</span><span>18:15</span></div>
+      </article>
+      <article class="card">
+        <div class="thumb"></div>
+        <h3>Nuevas normativas de transparencia algorítmica exigen auditorías externas</h3>
+        <p class="dek">Sistemas de IA de alto riesgo deberán presentar métricas de sesgo antes de operar.</p>
+        <div class="meta"><span class="ok">✓ Verificado</span><span>·</span><span>Agente 3</span><span>·</span><span>17:50</span></div>
+      </article>
+    </div>
+  </section>
+
+  <section class="beat">
+    <div class="beat-head"><span class="tag cultura">Cultura</span><span class="rule"></span></div>
+    <div class="cards">
+      <article class="card">
+        <div class="thumb"></div>
+        <h3>Instituciones tradicionales buscan un modelo híbrido digital</h3>
+        <p class="dek">Museos integran realidades inmersivas para democratizar el acceso al patrimonio.</p>
+        <div class="meta"><span class="ok">✓ Verificado</span><span>·</span><span>Agente 3</span><span>·</span><span>19:02</span></div>
+      </article>
+    </div>
+  </section>
+
+  <footer>
+    <p class="foot-note">Coherencia Institucional opera bajo un pipeline transparente. El Agente 1 audita hechos, el Agente 2 redacta, y el Director Editorial aplica el gatekeeping humano final para evitar sesgos y burbujas de filtro (Agente 3).</p>
+    <div class="sub">
+      <input type="text" placeholder="tu@email.com" />
+      <button>Suscribirse</button>
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>
